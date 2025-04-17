@@ -13,6 +13,7 @@ _start:
 	li	a0, STDOUT_FILENO
 	la	a1, msg
 
+	# calculate strlen
 	la	t0, msgend
 	la	t1, msg
 	sub	a2, t0, t1
@@ -26,6 +27,5 @@ _start:
 	ecall
 
 .section .rodata
-msg: 
-	.ascii "Hello RISC-V!\n"
+msg: .ascii "Hello RISC-V!\n"
 msgend:

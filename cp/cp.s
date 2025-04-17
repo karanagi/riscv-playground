@@ -6,4 +6,3 @@
 .equ SYS_EXIT, 		93
 
 _start:
-	
