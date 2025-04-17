@@ -13,10 +13,7 @@ _start:
 	li	a0, STDOUT_FILENO
 	la	a1, msg
 
-<<<<<<< HEAD
-=======
 	# calculate strlen
->>>>>>> cp
 	la	t0, msgend
 	la	t1, msg
 	sub	a2, t0, t1
