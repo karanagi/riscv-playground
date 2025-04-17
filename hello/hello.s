@@ -30,10 +30,5 @@ _start:
 	ecall
 
 .section .rodata
-<<<<<<< HEAD
-msg: 
-	.ascii "Hello RISC-V!\n"
-=======
 msg: .ascii "Hello RISC-V!\n"
->>>>>>> cp
 msgend:
