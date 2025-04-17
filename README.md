@@ -13,6 +13,13 @@ $ qemu-riscv64 hello
 Hello RISC-V!
 ```
 
+## Program Listing
+- `hello`: hello world.
+- `args/count_args.s`: count the number of command line arguments (which is kind of useless since one could simply look at `argc`).
+- `args/print_args.s`: prints all of the command line arguments.
+- `cp/cp.s`: a simple and crude implementation of `cp`.
+- `print_load_addr/print_load_addr.s`: prints the load address.
+
 ## Links and Resources
 - <https://asm-docs.microagi.org/risc-v/riscv-asm.html>
 - <https://jborza.com/post/2021-05-11-riscv-linux-syscalls/>
