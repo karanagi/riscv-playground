@@ -1,6 +1,5 @@
 .global _start
 
-.equ SYS_WRITE,		64
 .equ SYS_EXIT, 		93
 
 .equ WORD_SIZE,		8
@@ -20,7 +19,6 @@ loop:
 	j		loop
 
 exit:
-	#li		a0, EXIT_SUCESS
 	mv		a0, t2
 	li		a7, SYS_EXIT
 	ecall
