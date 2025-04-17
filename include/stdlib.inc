@@ -1,5 +1,6 @@
 .equ AT_FDCWD,		-100
 
+.equ STDOUT_FILENO, 1
 .equ STDERR_FILENO,	2
 
 .equ EXIT_SUCCESS,	0
