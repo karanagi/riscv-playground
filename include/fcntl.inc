@@ -1,0 +1,7 @@
+.equ O_RDONLY,		000000
+.equ O_WRONLY,		000001
+.equ O_RDWR,		000002
+.equ O_CREAT,		000100
+
+.equ S_IWUSR, 		000200
+.equ S_IRUSR, 		000400

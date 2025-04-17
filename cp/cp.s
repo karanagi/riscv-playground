@@ -1,28 +1,13 @@
 .global _start
 
-.equ SYS_OPENAT, 	56
-.equ SYS_READ, 		63
-.equ SYS_WRITE, 	64
-.equ SYS_EXIT, 		93
+.include "../include/syscall_defs.inc"
+.include "../include/fcntl.inc"
+.include "../include/stdlib.inc"
 
-.equ AT_FDCWD,		-100
-
-.equ STDERR_FILENO,	2
-
-.equ EXIT_SUCCESS,	0
-.equ EXIT_FAILURE,	1
 
 .equ NARGS,			3
 .equ WORD_SIZE,		8
 .equ STACK_SIZE,	1024
-
-.equ O_RDONLY,		000000
-.equ O_WRONLY,		000001
-.equ O_RDWR,		000002
-.equ O_CREAT,		000100
-
-.equ S_IWUSR, 		000200
-.equ S_IRUSR, 		000400
 
 _start:
 	ld 		t0, (sp)

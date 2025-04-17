@@ -8,4 +8,4 @@ cp: cp.o
 cp.o: 
 
 clean:
-	rm cp cp.o test*
+	rm cp cp.o
