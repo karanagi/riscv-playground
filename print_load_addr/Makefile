@@ -16,4 +16,4 @@ debug: print_laddr
 clean:
 	rm print_laddr print_laddr.o
 
-.PHONY=clean run debug
+.PHONY:clean run debug
